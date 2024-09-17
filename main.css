@@ -14,7 +14,7 @@ img {
 html {
   --primary: #1a283f;
   --secondary: #e783a9;
-  --accent: #f5f5f5;
+  --accent: #ededed;
 }
 
 /*font for text*/
@@ -22,8 +22,14 @@ p,
 h1,
 h2,
 h3,
-h4 {
-  font-family: Helvetica, Arial, sans-serif;
+h4,
+li {
+  font-family: "Roboto", system-ui;
+  color: var(--primary);
+}
+
+p {
+  line-height: 1.6;
 }
 
 body {
