@@ -1,84 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside</title>
+    <title>MitKEA</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="main.css">
-    <meta name="robots" content="noindex">
-
-    <!--
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    -->
 </head>
-
 <body>
+    <div class="top-menu">
+        <div class="mitkea">MitKEA</div>
+        <div class="top-links">
+            <a href="#"><strong>Find din uddannelse</strong></a>
+            <a href="#"><strong>Serviceportal</strong></a>
+            <a href="#"><strong>Itslearning</strong></a>
+            <a href="#"><strong>Bibliotek</strong></a>
+        </div>
+    </div>
     <header>
-        <div class="top-head">
-            <p>MITKEA-INTRANET FOR KEA-STURDERENDE</p>
-            <div>
-                <p>find din uddannelse</p>
-                <p>Sevicepotal</p>
-                <p>itslearning</p>
-                <p>bibliotek</p>
-                <p>KEA.DK</p>
+        <nav class="main-menu">
+            <div class="logo">
+                <img src="foto/Kea-Logo.png" alt="Logo">
             </div>
-        </div>
-        <div class="bund-head">
-            <div>
-                <img src="logo.webp" alt="">
-                <p>studiehåndbog</p>
-                <p>Vejledning og støtte</p>
-                <p>Praktik</p>
-                <p>Internationale muligheder</p>
-                <p>Studieliv og faciliteter</p>
+            <div class="main-links">
+                <a href="#"><strong>Studiehåndbogen</strong></a>
+                <a href="#"><strong>Vejledning og støtte</strong></a>
+                <a href="#"><strong>Praktik</strong></a>
+                <a href="#"><strong>Internationale muligheder</strong></a>
             </div>
-
-            <div>
-                <p>EN</p>
-                <img src="serch.webp" alt="">
+            <div class="language-search">
+                <span class="language-selector">EN</span>
+                <input type="text" class="search-field" placeholder="Søg...">
             </div>
-
-        </div>
-    </header>
-    <main>
-        <nav>
-            <a href="index.html">Forside</a>
-            <a href="underkategorier.html">Underkategorier</a>
-            <a href="udstyr.html">Udstyr</a>
+            <button id="burger-menu" aria-label="Menu">&#9776;</button>
         </nav>
-        <div class="tsl-grid">
-            <div class="tsl-grid_1">
-                <h1>Tech & Story Lab</h1>
-                <p>Tech & Story Lab er et lat med focus på ny teknologi for KEAs studerend, underviser og øverige
-                    ansatte</p>
-            </div>
-            <img class="tsl-grid_2" src="img/placeholder.webp" alt="">
-            <div class="tsl-grid_3">
-                <h2>åbningstider</h2>
-                <p>mandag-torsdag: 9.00-16.00</p>
-                <p>fredag: 9.00-15.00</p>
+    </header>
 
-                <div class="tsl-grid_3-1">
-                    <img src="img/placeholder.webp" alt="">
-                    <div>
-                        <p>frederick Lehmann Roslning</p>
-                        <p>T: 46 46 05 41</p>
-                        <p>E techandstorylab@kea.sad</p>
-                    </div>
+    <main>
+ 
+        <main>
+            <div class="grid-container">
+                <!-- Første række: Tekst og billede ved siden af hinanden -->
+                <div class="text-box">
+                    <h1>Tech & Story Lab </h1>
+                    <p>Tech & Story Lab er et lab med fokus på ny teknologi for KEAs studerende, undervisere og øvrige ansatte.</p>
+                </div>
+                <div class="image-box">
+                    <img class="hænder" src="foto/Hænder_med_mobil.png" alt="Billede 1">
+                </div>
+        
+                <!-- Anden række: Billede og tekst ved siden af hinanden -->
+                <div class="image-box">
+                    <img src="foto/Linser.png" alt="Billede 2">
+                </div>
+                <div class="text-box">
+                    <h1>Åbningstider</h1>
+                    <p>Mandag-torsdag: 9.00-16.00 <br>
+                    Fredag: 9.00-15.00.</p>
                 </div>
             </div>
-            <img class="tsl-grid_4" src="img/placeholder.webp" alt="">
+<Div><p>I Tech & Story Lab kan du eksperimentere med ny teknologi og på egen hånd lære at arbejde med forskelligt udstyr. Vi har alt lige fra kameraer, mikrofoner og lysudstyr til VR-gear, AI-teknologier, RaspberryPi’s og meget mere.
+ Du kan låne et stort udvalg af udstyr og få kyndig vejledning i brugen af det.</p></Div>
+
+
+   <!-- Logo og H1 ved siden af hinanden -->
+   <div class="logo-title-container">
+    <img src="foto/Logo.png" alt="Logo" class="logo">
+    <h1>Udstyr i Tech & Story Lab
+    <br>Kategorier</h1>
+</div>
+
+<!-- Seks billeder under logo og H1 -->
+<div class="image-gallery">
+   <a href="underkategorier.html?Type=Accessories"><img src="foto/Kamera.png" alt="Billede 3"></a>
+    <img src="foto/video.png" alt="Billede 4">
+    <img src="foto/Lyd.png" alt="Billede 5">
+    <img src="foto/studie.png" alt="Billede 6">
+    <img src="foto/kabel.png" alt="Billede 7">
+    <img src="foto/hukommelse.png" alt="Billede 8">
+</div>
+
+
+<!-- Adgang til labbet og udstyr -->
+
+<div>
+    <h1>Adgang til labbet og <br> udstyret</h1>
+    <Div class="grid_1fr">
+        <div >
+            <h1>Husk Studiekort</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta repellendus quasi maxime sint, laborum voluptatem ipsam quos, nisi, repellat rem praesentium cupiditate non qui. Voluptate consectetur corporis odio voluptatum non.</p>
         </div>
+        <div>
+        <h1>Hvordan gør man</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam distinctio autem esse praesentium voluptatem quia blanditiis eligendi sunt cumque voluptates odio adipisci culpa, a, illum excepturi, dignissimos expedita recusandae molestiae?</p>
+    </Div>
+</div>
+</div>
+        </main>
+         
+  
     </main>
-    <footer></footer>
-
-
+    
 
     <script src="index.js"></script>
 </body>
-
 </html>
