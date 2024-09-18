@@ -2,12 +2,12 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-background-color: #ededee;
+  background-color: #ededee;
 }
 
 /* Header styling */
 header {
-  background-color: #1A283F;
+  background-color: #1a283f;
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
 }
@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #D8E0E8;
+  background-color: #d8e0e8;
   padding: 10px;
 }
 
@@ -89,33 +89,33 @@ header {
 /* Responsive styling */
 @media (max-width: 768px) {
   .top-links {
-      display: none !important; /* Sikrer, at topmenu-linksene forsvinder */
+    display: none !important; /* Sikrer, at topmenu-linksene forsvinder */
   }
 
   .main-links,
   .language-search {
-      display: none;
+    display: none;
   }
 
   #burger-menu {
-      display: block;
+    display: block;
   }
 
   .main-menu.active .main-links,
   .main-menu.active .language-search {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #fff;
-      width: 100%;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
   }
 
   .main-menu.active .main-links a {
-      padding: 10px;
+    padding: 10px;
   }
 }
 
@@ -139,7 +139,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr; /* To lige brede kolonner */
   grid-gap: 20px;
- 
 }
 
 /* Styling for tekstbokse */
@@ -147,7 +146,6 @@ main {
   background-color: #f4f4f4;
   padding: 20px;
   border-radius: 10px;
-
 }
 
 /* Styling for billeder */
@@ -155,14 +153,8 @@ main {
   width: 100%;
   height: auto;
   border-radius: 10px;
-aspect-ratio: 16/9;
+  aspect-ratio: 16/9;
 }
-
-
-
-
-
-
 
 /* Logo og H1 side by side */
 .logo-title-container {
@@ -199,102 +191,100 @@ aspect-ratio: 16/9;
 @media (min-width: 750px) {
   /* Tre billeder pr. række ved større skærme */
   .image-gallery {
-      grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (max-width: 750px) {
   /* En kolonne til grid-container for smalle skærme */
   .grid-container {
-
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* To lige brede kolonner */
-      grid-gap: 20px;
-     
-    }
-    
-    /* Styling for tekstbokse */
-    .text-box {
-      background-color: #f4f4f4;
-      padding: 20px;
-      border-radius: 10px;
-      aspect-ratio: 16/9;
-    
-    }
-    
-    /* Styling for billeder */
-    .image-box img {
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-   
-    }
-
-
-  }
-
-  /* Billeder og tekst tager hele bredden */
-  .text-box, .image-box {
-      grid-column: span 1;
-  }
-
-
-  .grid_1fr{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-radius: 5px;
+    grid-template-columns: 1fr 1fr; /* To lige brede kolonner */
     grid-gap: 20px;
   }
 
-  .boks_1{
-    background-color: #ffffff;
-    display: grid;
+  /* Styling for tekstbokse */
+  .text-box {
+    background-color: #f4f4f4;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
+    aspect-ratio: 16/9;
   }
 
-  .stativ{
+  /* Styling for billeder */
+  .image-box img {
     width: 100%;
-    max-height: 300px;
-    border-radius: 5px;
-
+    height: 100%;
+    border-radius: 10px;
   }
+}
 
-  .TS{
-    background-color: #E783A9;
-    border-radius: 5px;
-  }
+/* Billeder og tekst tager hele bredden */
+.text-box,
+.image-box {
+  grid-column: span 1;
+}
 
-.TS img{
+.grid_1fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5px;
+  grid-gap: 20px;
+}
+
+.boks_1 {
+  background-color: #ffffff;
+  display: grid;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.stativ {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 5px;
+}
+
+.TS {
+  background-color: #e783a9;
+  border-radius: 5px;
+}
+
+.TS img {
   max-width: 20%;
 }
 
-.Lokation{
+.Lokation {
   background-color: white;
   padding: 20px;
 }
 
-.Kontakt1{
+.Kontakt1 {
   text-align: center;
 }
 
-.Kontakt1 img{
+.Kontakt1 img {
   border-radius: 50%;
 }
 
-.Kontakt2{
+.Kontakt2 {
   text-align: center;
 }
 
-.Kontakt3{
-  text-align: center
-
+.Kontakt3 {
+  text-align: center;
 }
 
-@media (min-width: 750px){
-  
-  .contact{
+@media (min-width: 750px) {
+  .contact {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .grid-container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
