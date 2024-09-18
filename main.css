@@ -28,6 +28,10 @@ li {
   color: var(--primary);
 }
 
+p {
+  line-height: 1.6;
+}
+
 body {
   background-color: var(--accent);
 }
