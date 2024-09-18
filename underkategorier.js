@@ -29,5 +29,6 @@ function showProduct(product) {
   clone.querySelector("h2").textContent = `${product.Taksonomi1}`;
   console.log("hejsa", product.Taksonomi1);
   clone.querySelector("a").href = `udstyr.html?AssetID=${product.AssetID}`;
+  clone.querySelector("img").src = "img/" + product.imgs;
   productList.appendChild(clone);
 }
