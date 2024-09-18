@@ -26,7 +26,6 @@ function showList2(json) {
 function showProduct(product) {
   const clone = productTemplate.cloneNode(true);
   clone.querySelector("h3").textContent = `${product.Produktnavn_model}`;
-  clone.querySelector("h2").textContent = `${product.Taksonomi1}`;
   console.log("hejsa", product.Taksonomi1);
   clone.querySelector("a").href = `udstyr.html?AssetID=${product.AssetID}`;
   clone.querySelector("img").src = "img/" + product.imgs;
