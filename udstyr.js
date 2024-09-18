@@ -16,3 +16,10 @@ function showList(data) {
   document.querySelector("#s_img").src = "img/" + data[0].imgs;
   document.querySelector(".description").textContent = data[0].b_tekst;
 }
+
+
+document.getElementById('burger-menu').addEventListener('click', function() {
+  const mainMenu = document.querySelector('.main-menu');
+  
+  mainMenu.classList.toggle('active'); // Toggler visningen af menuen på små skærme
+});
