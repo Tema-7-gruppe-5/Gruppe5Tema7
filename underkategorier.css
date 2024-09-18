@@ -1,12 +1,14 @@
 .category_container {
   display: grid;
   grid-gap: 0.6rem;
+  margin-top: 10px;
 }
 .category {
 }
 .first_text {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 15px;
+  padding: 23px;
 }
 .category_img {
   border-radius: 15px;
