@@ -135,7 +135,11 @@ main {
 @media (min-width: 750px) {
   .udstyr_container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 4fr 1fr;
+  }
+
+  #s_img {
+    border-radius: 15px;
   }
 
   .model {
