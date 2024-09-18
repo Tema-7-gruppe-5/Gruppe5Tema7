@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+
+
+
+
+
+  <body>
+    <div class="top-menu">
+        <a href="form.html"> <div class="mitkea">Mit-KEA</div></a>
+         <div class="top-links">
+           <a href="#"><strong>Find din uddannelse</strong></a>
+           <a href="#"><strong>Serviceportal</strong></a>
+           <a href="#"><strong>Itslearning</strong></a>
+           <a href="#"><strong>Bibliotek</strong></a>
+         </div>
+       </div>
+       <header>
+         <nav class="main-menu">
+           <div class="logo">
+            <a href="index.html"> <img src="img/Kea-Logo.png" alt="Logo" /></a>
+           </div>
+           <div class="main-links">
+             <a href="#"><strong>Studiehåndbogen</strong></a>
+             <a href="#"><strong>Vejledning og støtte</strong></a>
+             <a href="#"><strong>Praktik</strong></a>
+             <a href="#"><strong>Internationale muligheder</strong></a>
+           </div>
+           <div class="language-search">
+             <span class="language-selector">EN</span>
+             <input type="text" class="search-field" placeholder="Søg..." />
+           </div>
+           <button id="burger-menu" aria-label="Menu">&#9776;</button>
+         </nav>
+       </header>
+
+    <h1>Login på Mit-KEA</h1>
+
+    <form method="post">
+      <fieldset>
+        <label for="first-name">Fornavn: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Efternavn: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="new-password"> Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
+      </fieldset>
+     
+
+       
+      </label>
+      <input type="submit" value="Log på" />
+    </form>
+  </body>
+</html>
