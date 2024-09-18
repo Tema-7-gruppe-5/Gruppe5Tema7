@@ -17,6 +17,11 @@ html {
   --accent: #ededed;
 }
 
+main {
+  margin: 2rem;
+  text-wrap: pretty;
+}
+
 /*font for text*/
 p,
 h1,
@@ -26,6 +31,10 @@ h4,
 li {
   font-family: "Roboto", system-ui;
   color: var(--primary);
+}
+
+.bund-head p {
+  color: white;
 }
 
 p {

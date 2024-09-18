@@ -1,3 +1,18 @@
+.category_container {
+  display: grid;
+  grid-gap: 0.6rem;
+  margin-top: 10px;
+}
+
+.first_text {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 23px;
+}
+.category_img {
+  border-radius: 15px;
+}
+
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
