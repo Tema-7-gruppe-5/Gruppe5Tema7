@@ -17,6 +17,11 @@ html {
   --accent: #ededed;
 }
 
+main {
+  margin: 2rem;
+  text-wrap: pretty;
+}
+
 /*font for text*/
 p,
 h1,
