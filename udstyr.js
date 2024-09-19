@@ -13,13 +13,12 @@ fetch(`https://mbfwwvemximslgoumeom.supabase.co/rest/v1/TSL?AssetID=eq.${id}`, {
 function showList(data) {
   console.log(data[0]);
   document.querySelector(".modelnavn").textContent = data[0].Produktnavn_model;
-  document.querySelector("#s_img").src = "img/" + data[0].imgs;
+  document.querySelector("#s_img").src = "img/" + product.AssetID + ".webp";
   document.querySelector(".description").textContent = data[0].b_tekst;
 }
 
+document.getElementById("burger-menu").addEventListener("click", function () {
+  const mainMenu = document.querySelector(".main-menu");
 
-document.getElementById('burger-menu').addEventListener('click', function() {
-  const mainMenu = document.querySelector('.main-menu');
-  
-  mainMenu.classList.toggle('active'); // Toggler visningen af menuen på små skærme
+  mainMenu.classList.toggle("active"); // Toggler visningen af menuen på små skærme
 });
