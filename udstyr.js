@@ -13,7 +13,8 @@ fetch(`https://mbfwwvemximslgoumeom.supabase.co/rest/v1/TSL?AssetID=eq.${id}`, {
 function showList(data) {
   console.log(data[0]);
   document.querySelector(".modelnavn").textContent = data[0].Produktnavn_model;
-  document.querySelector("#s_img").src = "img/" + product.AssetID + ".webp";
+  document.querySelector("#s_img").src = "img/" + data[0].Mærke + ".webp";
+  document.querySelector("#s_img").alt = "billede af" + `${data[0].Produktnavn_model}`;
   document.querySelector(".description").textContent = data[0].b_tekst;
 }
 
