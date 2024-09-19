@@ -140,6 +140,7 @@ main {
 
   #s_img {
     border-radius: 15px;
+    max-width: 100%;
   }
 
   .model {
@@ -172,6 +173,7 @@ main {
   .included {
     grid-column: 4/6;
     grid-row: 2/3;
+    padding: 3rem;
   }
 
   .availability {
@@ -188,28 +190,38 @@ main {
   .adresse {
     grid-column: 1/2;
     grid-row: 1/3;
+    padding: 3rem;
   }
   .open {
     grid-column: 2/3;
     grid-row: 1/2;
+    padding: 3rem;
   }
   .suggestion {
     grid-column: 2/3;
     grid-row: 2/4;
+    padding: 3rem;
+  }
+  .ekstra {
+    padding: 3rem;
+    font-size: 30px;
+  }
+
+  #logo_udstyr {
+    max-width: 9%;
   }
 }
-
 
 /* Grundlæggende styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-background-color: #ededee;
+  background-color: #ededee;
 }
 
 /* Header styling */
 header {
-  background-color: #1A283F;
+  background-color: #1a283f;
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
 }
@@ -219,7 +231,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #D8E0E8;
+  background-color: #d8e0e8;
   padding: 10px;
 }
 
@@ -292,32 +304,32 @@ header {
 /* Responsive styling */
 @media (max-width: 768px) {
   .top-links {
-      display: none !important; /* Sikrer, at topmenu-linksene forsvinder */
+    display: none !important; /* Sikrer, at topmenu-linksene forsvinder */
   }
 
   .main-links,
   .language-search {
-      display: none;
+    display: none;
   }
 
   #burger-menu {
-      display: block;
+    display: block;
   }
 
   .main-menu.active .main-links,
   .main-menu.active .language-search {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #fff;
-      width: 100%;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
   }
 
   .main-menu.active .main-links a {
-      padding: 10px;
+    padding: 10px;
   }
 }

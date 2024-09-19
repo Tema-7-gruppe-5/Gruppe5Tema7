@@ -18,8 +18,10 @@ html {
 }
 
 main {
-  margin: 2rem;
   text-wrap: pretty;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /*font for text*/
@@ -97,7 +99,7 @@ header {
 
 /* Style the list */
 ul.breadcrumb {
-  padding: 10px 16px;
+  padding: 20px 16px;
   list-style: none;
   font-weight: bold;
 }

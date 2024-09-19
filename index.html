@@ -1,193 +1,196 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mit-KEA</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="top-menu">
-     <a href="form.html"> <div class="mitkea">Mit-KEA</div></a>
-      <div class="top-links">
-        <a href="#"><strong>Find din uddannelse</strong></a>
-        <a href="#"><strong>Serviceportal</strong></a>
-        <a href="#"><strong>Itslearning</strong></a>
-        <a href="#"><strong>Bibliotek</strong></a>
-      </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Mit-KEA</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="main.css">
+  <meta name="robots" content="noindex">
+</head>
+
+<body>
+  <div class="top-menu">
+    <a href="form.html">
+      <div class="mitkea">Mit-KEA</div>
+    </a>
+    <div class="top-links">
+      <a href="#"><strong>Find din uddannelse</strong></a>
+      <a href="#"><strong>Serviceportal</strong></a>
+      <a href="#"><strong>Itslearning</strong></a>
+      <a href="#"><strong>Bibliotek</strong></a>
     </div>
-    <header>
-      <nav class="main-menu">
-        <div class="logo">
-          <a href="index.html"><img src="img/Kea-Logo.png" alt="Logo" /></a>
-        </div>
-        <div class="main-links">
-          <a href="#"><strong>Studiehåndbogen</strong></a>
-          <a href="#"><strong>Vejledning og støtte</strong></a>
-          <a href="#"><strong>Praktik</strong></a>
-          <a href="#"><strong>Internationale muligheder</strong></a>
-        </div>
-        <div class="language-search">
-          <span class="language-selector">EN</span>
-          <input type="text" class="search-field" placeholder="Søg..." />
-        </div>
-        <button id="burger-menu" aria-label="Menu">&#9776;</button>
-      </nav>
-    </header>
-
-    <main>
-      <div class="grid-container">
-        <!-- Første række: Tekst og billede ved siden af hinanden -->
-        <div class="text-box">
-          <h1>Tech & Story Lab</h1>
-          <p>
-            Tech & Story Lab er et lab med fokus på ny teknologi for KEAs
-            studerende, undervisere og øvrige ansatte.
-          </p>
-        </div>
-        <div class="image-box">
-          <img class="hænder" src="img/cameragirl.webp" alt="Billede 1" />
-        </div>
-
-        <!-- Anden række: Billede og tekst ved siden af hinanden -->
-        <div class="image-box">
-          <img src="img/Linser.webp" alt="Billede 2" />
-        </div>
-        <div class="text-box">
-          <h1>Åbningstider</h1>
-          <p>
-            Mandag-torsdag: 9.00-16.00 <br />
-            Fredag: 9.00-15.00.
-          </p>
-        </div>
+  </div>
+  <header>
+    <nav class="main-menu">
+      <div class="logo">
+        <a href="index.html"><img src="img/Kea-Logo.png" alt="Logo" /></a>
       </div>
-      <div>
+      <div class="main-links">
+        <a href="#"><strong>Studiehåndbogen</strong></a>
+        <a href="#"><strong>Vejledning og støtte</strong></a>
+        <a href="#"><strong>Praktik</strong></a>
+        <a href="#"><strong>Internationale muligheder</strong></a>
+      </div>
+      <div class="language-search">
+        <span class="language-selector">EN</span>
+        <input type="text" class="search-field" placeholder="Søg..." />
+      </div>
+      <button id="burger-menu" aria-label="Menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+    <ul class="breadcrumb">
+      <li id="open">Forside</li>
+    </ul>
+    <div class="grid-container">
+      <!-- Første række: Tekst og billede ved siden af hinanden -->
+      <div class="text-box">
+        <h1>Tech<br>& Story Lab</h1>
         <p>
-          I Tech & Story Lab kan du eksperimentere med ny teknologi og på egen
-          hånd lære at arbejde med forskelligt udstyr. Vi har alt lige fra
-          kameraer, mikrofoner og lysudstyr til VR-gear, AI-teknologier,
-          RaspberryPi’s og meget mere. Du kan låne et stort udvalg af udstyr og
-          få kyndig vejledning i brugen af det.
+          Tech & Story Lab er et lab med fokus på ny teknologi for KEAs
+          studerende, undervisere og øvrige ansatte.
         </p>
       </div>
-
-      <!-- Logo og H1 ved siden af hinanden -->
-      <div class="logo-title-container">
-        <img src="img/Logo.png" alt="Logo" class="logo" />
-        <h1>Udstyr i Tech & Story Lab <br />Kategorier</h1>
+      <div class="image-box">
+        <img class="hænder" src="img/hands.jpg" alt="Billede 1" />
       </div>
 
-      <!-- Seks billeder under logo og H1 -->
-      <div class="image-gallery">
-        <a href="underkategorier.html?Type=Camera with Lens"
-          ><img src="img/Kamera.webp" alt="Billede 3"
-        /></a>
-        <a href="underkategorier.html?Type=Smartphones">
-          <img src="img/video.webp" alt="Billede 4"
-        /></a>
-        <a href="underkategorier.html?Type=Microphones and Audio Recorders">
-          <img src="img/Lyd.webp" alt="Billede 5"
-        /></a>
-        <a href=""> <img src="img/studie.webp" alt="Billede 6" /></a>
-        <a href="underkategorier.html?Type=Converts connector types">
-          <img src="img/kabel.webp" alt="Billede 7"
-        /></a>
-        <a href="underkategorier.html?Type=Peripheral Devices">
-          <img src="img/hukommelse.webp" alt="Billede 8"
-        /></a>
+      <!-- Anden række: Billede og tekst ved siden af hinanden -->
+      <div class="image-box2">
+        <img src="img/Linser.webp" alt="Billede 2" />
       </div>
+      <div class="text-box2">
+        <h3>Åbningstider</h3>
+        <p>
+          Mandag-torsdag: 9.00-16.00 <br />
+          Fredag: 9.00-15.00.
+        </p>
+      </div>
+    </div>
+    <div class="text_under">
+      <p>
+        I Tech & Story Lab kan du eksperimentere med ny teknologi og på egen
+        hånd lære at arbejde med forskelligt udstyr. Vi har alt lige fra
+        kameraer, mikrofoner og lysudstyr til VR-gear, AI-teknologier,
+        RaspberryPi’s og meget mere. Du kan låne et stort udvalg af udstyr og
+        få kyndig vejledning i brugen af det.
+      </p>
+    </div>
 
-      <!-- Adgang til labbet og udstyr -->
+    <!-- Logo og H1 ved siden af hinanden -->
+    <div class="logo-title-container">
+      <img src="img/Logo.png" alt="Logo" class="logo" />
+      <h1>Udstyr i Tech & Story Lab <br />Kategorier</h1>
+    </div>
 
-      <div>
-        <h1>
-          Adgang til labbet og <br />
-          udstyret
-        </h1>
+    <!-- Seks billeder under logo og H1 -->
+    <div class="image-gallery">
+      <a href="underkategorier.html?Type=Camera with Lens"><img src="img/kamera.svg" alt="Billede 3" /></a>
+      <a href="underkategorier.html?Type=Smartphones">
+        <img src="img/video.svg" alt="Billede 4" /></a>
+      <a href="underkategorier.html?Type=Microphones and Audio Recorders">
+        <img src="img/lyd.svg" alt="Billede 5" /></a>
+      <a href=""> <img src="img/studier.svg" alt="Billede 6" /></a>
+      <a href="underkategorier.html?Type=Converts connector types">
+        <img src="img/kabel.svg" alt="Billede 7" /></a>
+      <a href="underkategorier.html?Type=Peripheral Devices">
+        <img src="img/hukommelse.svg" alt="Billede 8" /></a>
+    </div>
 
-       <grid-container1>
-        <div class="grid_1fr">
-          <div class="boks_1">
-            <h1>Husk Studiekort</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              repellendus quasi maxime sint, laborum voluptatem ipsam quos,
-              nisi, repellat rem praesentium cupiditate non qui. Voluptate
-              consectetur corporis odio voluptatum non.
-            </p>
-          </div>
-          <div class="boks_1">
-            <h1>Hvordan gør man</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              distinctio autem esse praesentium voluptatem quia blanditiis
-              eligendi sunt cumque voluptates odio adipisci culpa, a, illum
-              excepturi, dignissimos expedita recusandae molestiae?
-            </p>
-          </div>
+    <!-- Adgang til labbet og udstyr -->
+
+    <div>
+      <h2 class="text_under">
+        Adgang til labbet og udstyret
+      </h2>
+    </div>
+    <div class="grid-container1">
+      <div class="grid_1fr">
+        <div class="boks_1">
+          <h3>Husk Studiekort</h3>
+          <p>
+            For at låne udstyr og benytte vores faciliteter skal du huske at medbringe dit
+            studiekort.<br><br>Studiekortet skal være gyldigt og må kun benyttes af kortets ejer.
+          </p>
+        </div>
+        <div class="boks_2">
+          <h3>Hvordan gør man</h3>
+          <p>
+            Du er altid velkommen til at kigge forbi os, hvis du leder efter særligt udstyr til dit projekt eller har
+            brug for råd og vejledning.<br><br>Ved du allerede på forhånd, hvilket udstyr du skal bruge, kan du se, om
+            udstyret er ledigt
+            inde på udstyret.
+          </p>
         </div>
       </div>
-
-      <img class="stativ" src="img/Stativer.webp" alt="" />
-
+      <div class="picture_stativ">
+        <img class="stativ" src="img/equipment.webp" alt="equipment" />
+      </div>
       <div class="TS">
-        <img src="img/Logo1.png" alt="" />
+        <img src="img/Logo1.png" alt="logo" />
         <p>
           Du er altid velkommen til at kigge forbi os, hvis du leder efter
           særligt udstyr til dit projekt eller har brug for råd og vejledning.
           Ved du allerede på forhånd, hvilket udstyr du skal bruge, kan du se,
-          om udstyret er ledigt i bookingmodulet. For at booke og få udleveret
-          udstyr skal du besøge os i Tech & Story Lab.
+          om udstyret er ledigt i bookingmodulet.<br><br><b>For at booke og få udleveret
+            udstyr skal du besøge os i Tech & Story Lab.</b>
         </p>
       </div>
+    </div>
+    <h2 class="text_under">Find os Her</h2>
 
-       </grid-container1>
-      <h1>Find os Her</h1>
 
-
-  <div class="grid-container3">
-      <div class="Lokation">
-        <h1>Adresse</h1>
+    <div class="grid-container3">
+      <div class="lokation">
+        <h3>Adresse</h3>
         <p>
           Tech & Story Lab holder til på Guldbergsgade 29N, 2200 KBH N, i
           stueplan bag receptionen.
         </p>
-        <img src="img/Lokation.png" alt="">
+        <img id="map" src="img/Lokation.png" alt="map">
       </div>
-
-      <div class="grid1_6">
-        <h1>Se dig omkring i Tech & Story Lab
-        </h1>
+      <div class="digital">
+        <h3 class="se_omkring">Se dig omkring i Tech & Story Lab
+        </h3>
+      </div>
+      <div class="digital_picture">
         <img class="Tech" src="img/TechLab.png" alt="">
       </div>
+    </div>
 
-      
-    </div>    
-   
-
-      <h1>Kontakt</h1>
-      <div class="contact">
-       
+    <div class="contact">
+      <h2>Kontakt</h2>
+      <div class="contact_grid">
         <div class="Kontakt1">
-          <img src="img/Frederik1.jpg" alt="Frederik">
+          <img src="img/frederick.webp" alt="Frederik">
           <H2>Frederik Hansen</H2>
           <p>Tlf: 2525-2626</p>
         </div>
         <div class="Kontakt2">
-          <img src="img/luca1.jpeg" alt="Luca">
+          <img src="img/luca.webp" alt="Luca">
           <H2>Luca Hansen</H2>
           <p>Tlf: 2525-2727</p>
         </div>
         <div class="Kontakt3">
-          <img src="img/simon1.jpg" alt="Simon">
+          <img src="img/simon.webp" alt="Simon">
           <H2>Simon Hansen</H2>
           <p>2525-2828</p>
         </div>
       </div>
+    </div>
 
 
-    </main>
+  </main>
 
-    <script src="index.js"></script>
-  </body>
+  <script src="index.js"></script>
+</body>
+
 </html>
