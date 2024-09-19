@@ -22,10 +22,47 @@ section {
 }
 
 article {
-  background-color: aquamarine;
+  background-color: white;
   padding: 20px;
   text-align: center;
   border-radius: 2rem;
+}
+
+.category_container2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 35px;
+}
+
+.cameras {
+  transform: rotate(-90deg);
+  margin-top: 90px;
+  font-size: 60px;
+  position: absolute;
+  left: -61px;
+  top: 1150px;
+}
+
+.heading2 {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#logo_under {
+  max-width: 90px;
+  margin-right: 21px;
+}
+
+/* Styling af søgefeltet */
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 @media (min-width: 750px) {
@@ -36,18 +73,44 @@ article {
     width: 80%;
     margin: 0 auto;
   }
+  .category_container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .category {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-top: 60px;
+    padding-left: 45px;
+  }
+
+  .first_text {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-right: 50px;
+  }
+
+  .category_img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+  .cameras {
+    top: 130%;
+  }
 }
 
 /* Grundlæggende styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-background-color: #ededee;
+  background-color: #ededee;
 }
 
 /* Header styling */
 header {
-  background-color: #1A283F;
+  background-color: #1a283f;
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
 }
@@ -57,7 +120,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #D8E0E8;
+  background-color: #d8e0e8;
   padding: 10px;
 }
 
@@ -128,34 +191,34 @@ header {
 }
 
 /* Responsive styling */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .top-links {
-      display: none !important; /* Sikrer, at topmenu-linksene forsvinder */
+    display: none !important; /* Sikrer, at topmenu-linksene forsvinder */
   }
 
   .main-links,
   .language-search {
-      display: none;
+    display: none;
   }
 
   #burger-menu {
-      display: block;
+    display: block;
   }
 
   .main-menu.active .main-links,
   .main-menu.active .language-search {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #fff;
-      width: 100%;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
   }
 
   .main-menu.active .main-links a {
-      padding: 10px;
+    padding: 10px;
   }
 }
