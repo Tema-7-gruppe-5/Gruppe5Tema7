@@ -29,6 +29,7 @@ function showProduct(product) {
   console.log("hejsa", product.Taksonomi1);
   clone.querySelector("a").href = `udstyr.html?AssetID=${product.AssetID}`;
   clone.querySelector("img").src = "img/" + product.AssetID + ".webp";
+  clone.querySelector("img").alt = "billede af" + `${product.Produktnavn_model}`;
   productList.appendChild(clone);
 }
 
