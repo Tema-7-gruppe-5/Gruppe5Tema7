@@ -120,10 +120,11 @@ header {
 /* Burger-menu styling */
 #burger-menu {
   display: none;
-  font-size: 24px;
+  font-size: 45px;
   background: none;
   border: none;
   cursor: pointer;
+  color: #ffffff;
 }
 
 /* Responsive styling */
