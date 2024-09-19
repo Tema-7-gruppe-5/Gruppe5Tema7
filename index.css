@@ -258,6 +258,7 @@ main {
 .Lokation {
   background-color: white;
   padding: 20px;
+  border-radius: 5px;
 }
 
 .Kontakt1 {
@@ -266,14 +267,28 @@ main {
 
 .Kontakt1 img {
   border-radius: 50%;
+  width: 180px;
+  max-width: 70%;
 }
 
 .Kontakt2 {
   text-align: center;
 }
 
+.Kontakt2 img {
+  border-radius: 50%;
+  width: 180px;
+  max-width: 70%;
+}
+
 .Kontakt3 {
   text-align: center;
+}
+
+.Kontakt3 img {
+  border-radius: 50%;
+  width: 180px;
+  max-width: 70%;
 }
 
 @media (min-width: 750px) {
@@ -283,9 +298,43 @@ main {
   }
 }
 
-@media (max-width: 750px) {
+@media (min-width: 750px) {
   .grid-container3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr;
+    grid-gap: 20px;
+
+    
   }
+
+  .Tech {
+    align-self: stretch;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .grid1_6 {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+
+  .grid1_6 h1{
+    border-radius: 5px;
+    padding: 20px;
+  }
+}
+
+.grid1_6 h1{
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.Tech {
+  align-self: stretch;
+  object-fit: cover;
+  width: 100%;
 }
